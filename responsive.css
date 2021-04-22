@@ -1,0 +1,23 @@
+@media (max-width: 1000px) {
+
+    li {
+        list-style: none;
+        flex: auto;
+        width: 50%;
+        padding-right: 25px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 670px) {
+
+    li {
+        list-style: none;
+        flex: auto;
+        width: 100%;
+        /* padding: 0 25px; */
+        margin: 0 auto;
+    }
+
+}
