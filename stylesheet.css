@@ -5,7 +5,7 @@
 body {
     background-color: #5a4141;
     max-width: 1180px;
-    padding: 0 25px;
+    /* padding: 0 25px; */
     margin: 0 auto;
 }
 
@@ -14,15 +14,24 @@ body {
     text-align: center;
 }
 
+
 .tweets {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
 }
 
+ul {
+    padding: 0 0;
+}
+
 li {
+    /* display: none; */
     list-style: none;
     flex: auto;
     width: 33%;
-    padding-right: 25px;
+    padding: 10px 25px;
+    /* display:block; */
+    opacity: 0;
 }
+
