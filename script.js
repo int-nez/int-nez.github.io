@@ -14,15 +14,11 @@ $(function(){
     var loadingComplete = false;
 
     $(window).scroll(function(){ 
-        // $('p').text($(this).scrollTop());
         if (loadingComplete) {
+        var $tweet;        
             for (var i = 0; i < $('li').length; i++) {
-                
                 $tweet = $('li').eq(i);
-                if (!$tweet.hasClass('active') && $tweet.offset().top < $(window).scrollTop()+$(window).height()/2) {
-                    // $tweet.hide();
-                    // $tweet.css('opacity', '0.5');
-                    // $tweet.hide();
+                if (!$tweet.hasClass('active') && $tweet.offset().top < $(window).scrollTop()+$(window).height()*0.75) {
                     $tweet.animate(
                         {'opacity': 1},
                         {queue: false, duration: 400}
@@ -33,7 +29,6 @@ $(function(){
         }
     });
     
-    var $tweet;        
     // var i = 0;
     sleep(30, function(){
         // i++;
